@@ -1,0 +1,332 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+
+@font-face {
+    font-family: gopi;
+    src: url(../Gabelisa.otf);
+}
+
+h1, h2, h3, h4, h5, h6, p {
+    margin: 0;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 15px;
+}
+
+.flex {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.inner {
+    max-width: 1300px;
+    margin: 0 auto;
+}
+
+/* navigation-start */
+
+.container {
+    width: 100%;
+    background-color: #f6e6d9;
+    padding-top: 3%;
+}
+
+.logo {
+    width: 250px;
+}
+
+.social-icon {
+    margin-top: 10px;
+}
+
+.social {
+    font-size: 20px;
+    padding: 7px 7px;
+    background-color: #eb9451;
+    color: #f6e6d9;
+    border-radius: 100%;
+    margin: 0px 5px;
+}
+
+.social1 {
+    padding: 7px 11px;
+    margin: 0px 5px;
+}
+
+/* navigation-end */
+
+/* two-section-start */
+
+/* left-box-start */
+
+.left-box {
+    width: 50%;
+    padding-top: 5%;
+}
+
+.left {
+    width: 55%;
+    z-index: 1;
+    text-align: center;
+}
+
+.left h3 {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+.left h1 {
+    font-size: 8rem;
+    font-weight: 900;
+    line-height: 140px;
+}
+
+.up {
+    position: relative;
+    top: -20px;
+    z-index: -1;
+}
+
+.hand-pic {
+    width: 30px;
+    position: absolute;
+    top: 10px;
+    right: 20px;
+}
+
+.left h2 {
+    font-size: 8.5rem;
+    font-family: gopi;
+    margin-top: -40%;
+    color: #eb9451;
+}
+
+.left p {
+    position: relative;
+    padding: 10px 0px;
+    background-color: black;
+    color: rgb(241, 239, 239);
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.center {
+    width: 100%;
+    background-image: url("../image/corner-img.png");
+    background-attachment: scroll;
+    background-repeat: no-repeat;
+    background-size: contain;
+    display: flex;
+    padding-top: 30px;
+}
+
+.right {
+    width: 40%;
+    align-self: start;
+    border: 2.5px solid black;
+    padding: 5% 0%;
+}
+
+.right h2 {
+    font-size: 1.9rem;
+    line-height: 45px;
+    padding-left: 20%;
+}
+
+hr {
+    height: 2.5px;
+    background-color: black;
+    border: none;
+    margin: 10% 0%;
+}
+
+.bold {
+    display: block;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.right h1 {
+    font-size: 4rem;
+    font-weight: 900;
+    padding-left: 20%;
+    line-height: 65px;
+}
+
+/* left-box-end */
+
+/* right-box-start */
+
+.right-box {
+    width: 45%;
+    padding-top: 3%;
+    position: relative;
+    z-index: 0;
+}
+
+.img-box1 {
+    width: 100%;
+    z-index: 1;
+}
+
+.girl {
+    width: 110%;
+    margin-left: -50px;
+    position: absolute;
+    bottom: 0;
+}
+
+.img-box2 {
+    width: 100%;
+    z-index: -1;
+}
+
+.circle-img {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+}
+
+.map {
+    font-size: 50px;
+    color: #eb9451;
+    padding-right: 20px;
+}
+
+.center p {
+    font-weight: 700;
+    padding-top: 5px;
+    line-height: 20px;
+    letter-spacing: 3px;
+}
+
+.para {
+    width: 100%
+}
+
+/* right-box-end */
+
+/* two-section-end */
+
+@media only screen and (max-width: 1150px) {
+    .left h1, .left h2 {
+        font-size: 10vw;
+    }
+    .right h1 {
+        font-size: 5vw;
+    }
+    .right h2 {
+        font-size: 2.2vw;
+    }
+    .bold {
+        font-size: 3vw;
+    }
+}
+
+/* @media only screen and (max-width:930px){
+    .girl{
+        position: absolute;
+        bottom: 0;
+    }
+    .circle-img{
+      position: absolute;
+     bottom: 0;
+    }
+} */
+
+@media only screen and (max-width: 768px) {
+    .two-box {
+        flex-direction: column;
+    }
+    .left-box, .right-box {
+        width: 100%;
+        padding: 70px 20px 0px 0px;
+    }
+    .para {
+        width: 100%;
+    }
+    .para {
+        font-size: .7rem
+    }
+    .logo {
+        width: 40vw;
+    }
+    .left {
+        width: 60%;
+    }
+    .left h1 {
+        font-size: 15vw;
+        line-height: 130%;
+    }
+    .left h2 {
+        font-size: 15vw;
+        margin-top: -30%;
+    }
+    .right h2 {
+        font-size: 3.5vw;
+        line-height: 180%;
+    }
+    .right h1 {
+        font-size: 6.5vw;
+        line-height: 120%;
+    }
+    .bold {
+        font-size: 4.5vw;
+    }
+    .right {
+        width: 30%;
+    }
+    .girl {
+        margin: 0;
+        width: 100%;
+        position: unset;
+    }
+    .circle-img {
+        width: 98%;
+       
+    }
+    .center {
+        padding-top: 40px;
+        justify-content: center;
+    }
+    .center p {
+        text-align: center;
+    }
+    .left h3 {
+        font-size: 3.8vw;
+    }
+}
+
+@media only screen and (max-width:425px) {
+    .social-icon {
+        margin: 0;
+    }
+    .social {
+        font-size: 15px;
+        margin: 0px 5px;
+    }
+    hr {
+        height: 3px;
+    }
+    .map {
+        padding-right: 0;
+    }
+    .left h1 {
+        line-height: 150%;
+    }
+    .left h2 {
+        margin-top: -70px;
+    }
+    .center p {
+        font-size: .7rem;
+    }
+}
